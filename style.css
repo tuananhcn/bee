@@ -1,0 +1,130 @@
+* {
+    font-family: 'DM Sans';
+    box-sizing: border-box;
+}
+
+/* body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 20px);
+    height: calc(100%);
+    padding: 15px 10px;
+    background-color:#696969;
+    position: absolute;
+    z-index: -1;
+} */
+body {
+    margin: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.nav-search-inner{
+    color: #fff;
+    position: relative;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.83px;
+    background-image: url(Untitled.png);
+    background-size: cover;
+    /* z-index: 0; */
+}
+.nav-search-inner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #111010;
+    opacity: 50%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-search {
+    display: flex;
+    width: 100%;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+.search {
+    order: -1;
+    padding-left: 30px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: ;
+    z-index: 2;
+}
+input[type=search] {
+    /* position: relative; */
+    border: 1px solid #000;
+    border-radius: 47px;
+    background: #000;
+    width: 230px;
+    text-align: center;
+    height: 31px;
+}
+.nav > ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 900px;
+    z-index: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.submit {
+    background: none;
+}
+.inner {
+    position: relative;
+    z-index: 2;
+    /* height: 0; */
+    width: 100%;
+    height: 100%;
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.logo {
+    width: 636px;
+    height: 135px
+}
+.nav > ul > li {
+    z-index: 2;
+    font-size: 13px;
+    padding: 5px
+}
+button[type="submit"] {
+    background: none;
+    border: none;
+    /* height: 10px; */
+    position: absolute;
+    top: 5%;
+    left: 81%;
+}
+button[type="submit"]:hover {
+    cursor: pointer;
+}
+.active{
+    background-color: #F23C14;
+    border-radius: 5px;
+}
+h1 {
+    text-align: center;
+    padding: 21px 0;
+    margin: 0;
+}
+.content {
+    background-color: #D9A880;
+}
