@@ -3,76 +3,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rudgwick Steam & Country Show</title>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/3f4efd766c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <html>
     <div class="page-container">
+        <div class="nav-search-inner">
         <div class="nav-search">
             <div class="nav">
                 <ul>
-                    <li>Home</li>
-                    <li>Entertainment</li>
-                    <li>Charity</li>
-                    <li>Animals</li>
-                    <li>Where In The World Are We?</li>
-                    <li>Reviews</li>
-                    <li>Gallery</li>
-                    <li>Contact Us</li>
+                    <li style="padding: 5px 15px"><a href="RudgwickSteamCountryShow.html">HOME</a></li>
+                    <li><a href="Entertainment.html">ENTERTAINMENT</a></li>
+                    <li><a href="Charity.html">CHARITY</a></li>
+                    <li><a href="Animals.html">ANIMALS</a></li>
+                    <li style="padding: 5px 15px" class="active"><a href="where-in-the-world-are-we.html">OUR ADDRESS</a></li>
+                    <li><a href="Reviews.html">REVIEWS</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
             <div class="search">
                 <input type="search">
                 <button type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <svg width="40" height="25" viewBox="0 0 31 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.3009 4.14231C9.85764 4.157 7.51996 5.18818 5.80219 7.00901C4.08441 8.82985 3.12725 11.2912 3.14126 13.8515C3.15527 16.4119 4.1393 18.8616 5.87689 20.6617C7.61448 22.4617 9.96328 23.4648 12.4066 23.4501C14.8499 23.4354 17.1876 22.4042 18.9054 20.5834C20.6231 18.7625 21.5803 16.3012 21.5663 13.7408C21.5523 11.1805 20.5682 8.7308 18.8307 6.93073C17.0931 5.13066 14.7443 4.12763 12.3009 4.14231ZM0.0704199 13.87C0.0594914 11.8215 0.515268 9.79993 1.39987 7.97318C2.28447 6.14643 3.57235 4.5673 5.15647 3.36702C6.7406 2.16675 8.57521 1.38 10.5078 1.07216C12.4405 0.764321 14.4153 0.944281 16.2682 1.59708C18.1212 2.24989 19.7986 3.35668 21.1613 4.82548C22.5239 6.29428 23.5323 8.08266 24.1028 10.042C24.6732 12.0013 24.7891 14.0751 24.4409 16.0908C24.0927 18.1065 23.2905 20.0061 22.1008 21.6315L30.4195 30.2494C30.7009 30.5512 30.8579 30.9567 30.8567 31.3786C30.8555 31.8005 30.6962 32.205 30.4132 32.505C30.1301 32.8051 29.746 32.9766 29.3434 32.9827C28.9408 32.9888 28.5521 32.8289 28.2609 32.5376L19.9422 23.9197C18.1346 25.4078 15.9647 26.3345 13.6795 26.5945C11.3942 26.8545 9.08512 26.4372 7.01489 25.3903C4.94465 24.3433 3.19631 22.7086 1.96867 20.672C0.741022 18.6355 0.0833445 16.2788 0.0704199 13.87Z" fill="white"/>
+                        <path d="M21.4487 21.6761L21.6974 21.3364C22.8407 19.7742 23.6129 17.9469 23.9482 16.0059C24.2835 14.065 24.1718 12.0682 23.6227 10.182C23.0736 8.29588 22.1034 6.57638 20.7946 5.16564C19.486 3.75501 17.8768 2.69401 16.1019 2.06868C14.3271 1.4434 12.4364 1.27124 10.5862 1.56594C8.73607 1.86064 6.97795 2.61407 5.45829 3.76549C3.93851 4.91701 2.70079 6.43368 1.84986 8.1909C0.998889 9.9482 0.559888 11.8942 0.570411 13.867L21.4487 21.6761ZM21.4487 21.6761L21.741 21.9789M21.4487 21.6761L21.741 21.9789M21.741 21.9789L30.0564 30.5934C30.2474 30.7997 30.3575 31.0808 30.3567 31.3774C30.3558 31.6755 30.2431 31.9568 30.0496 32.162C29.8567 32.3664 29.6 32.4787 29.3361 32.4827C29.0735 32.4867 28.8152 32.3832 28.6174 32.1868L20.302 23.5723L19.9813 23.24M21.741 21.9789L19.9813 23.24M19.9813 23.24L19.6245 23.5337M19.9813 23.24L19.6245 23.5337M19.6245 23.5337C17.8901 24.9616 15.8107 25.8489 13.6232 26.0977M19.6245 23.5337L13.6232 26.0977M13.6232 26.0977C11.4358 26.3465 9.22472 25.9474 7.24072 24.9441M13.6232 26.0977L7.24072 24.9441M7.24072 24.9441C5.25647 23.9406 3.57737 22.372 2.39692 20.4137M7.24072 24.9441L2.39692 20.4137M2.39692 20.4137C1.21637 18.4553 0.582862 16.187 0.570411 13.8671L2.39692 20.4137ZM12.2982 3.64232C9.71455 3.65785 7.2476 4.74845 5.43858 6.666C3.63032 8.58275 2.62657 11.1689 2.64127 13.8546C2.65596 16.5402 3.68794 19.1141 5.51706 21.009C7.34694 22.9047 9.82566 23.9656 12.4093 23.9501C14.993 23.9345 17.4599 22.8439 19.269 20.9264C21.0772 19.0096 22.081 16.4235 22.0663 13.7378C22.0516 11.0522 21.0196 8.47827 19.1905 6.58337C17.3606 4.68769 14.8819 3.6268 12.2982 3.64232Z" stroke="black" stroke-opacity="0.1"/>
+                        </svg>                        
                 </button>
             </div>
         </div>
         <div class="inner">
-            <h1>Rudgwick Steam & Country Show</h1>
-            <img src="https://rudgwicksteamshowcurtisyoung.files.wordpress.com/2017/06/logo-new.png?w=270" alt="A logo">
+            <img class="logo" src="Untitled1.png" alt="inner">
         </div>
+    </div>
         <div class="content">
-            <nav class="entry-breadcrumbs">
-                <a href="RudgwickSteamCountryShow.html">Home</a>
-                <span class="current-page">
-                    Where In The World Are We?
-                </span>
-            </nav>
-            <h1>Where In The World Are We?</h1>
-            <img src="https://rudgwicksteamshowcurtisyoung.files.wordpress.com/2017/06/map2.jpg?w=510&h=293" alt="">
-            <img src="https://rudgwicksteamshowcurtisyoung.files.wordpress.com/2017/06/map.jpg?w=530&h=346" alt="">
-            <p>We are located around the distances below from the selected areas.</p>
-            <p>GUILDFORD…………………….12 MILES    HORSHAM……………………..8 MILES</p>
-            <p>BILLINGSHURST……………….5 MILES    DORKING…………………….11 MILES</p>
-            <p>GATWICK………………………….17 MILES    LEATHERHEAD…………..17 MILES</p>
-            <p>HEATHROW……………………..45 MILES    BRIGHTON…………………..30 MILES</p>
-            <p>SALISBURY………………………90 MILES    PETWORTH…………………12 MILES</p>
-            <p>CRANLEIGH……………………….4 MILES    ALDERSHOT……………….17 MILES</p>
-            <p>WOKING…………………………..18 MILES    DARTFORD………………….50 MILES</p>
-            <p>MIDHURST………………………..18 MILES    BASINGSTOKE……………30 MILES</p>
+            <img style="display: inline-block; padding: 15px 5px 0 0;" src="/src/Vector-2.png">
+            <span>Home > Our Address</span>
+            <h1>WHERE IN THE WORLD ARE WE?</h1>
+            <img class="content-img" src="/src/thumbnail_screen-shot-2017-05-22-at-11-13-51 1 (2).png" style="display: block;margin: 0 auto">
+            <img class="content-img" src="/src/thumbnail_screen-shot-2017-05-22-at-11-13-51 1 (3).png" style="display: block;margin: 0 auto">
+            <p>We are located around the distances below from the selected areas.<br>
+                GUILDFORD…………………….12 MILES HORSHAM……………………..8 MILES<br>
+                BILLINGSHURST……………….5 MILES DORKING…………………….11 MILES<br>
+                GATWICK………………………….17 MILES LEATHERHEAD…………..17 MILES<br>
+                HEATHROW……………………..45 MILES BRIGHTON…………………..30 MILES<br>
+                SALISBURY………………………90 MILES PETWORTH…………………12 MILES<br>
+                CRANLEIGH……………………….4 MILES ALDERSHOT……………….17 MILES<br>
+                WOKING…………………………..18 MILES DARTFORD………………….50 MILES<br>
+                MIDHURST………………………..18 MILES BASINGSTOKE……………30 MILES</p>
             <p>Rudgwick is a village and civil parish in the Horsham District of West Sussex, England. The village is 6 miles west from Horsham on the north side of the A281 road.</p>
-            <p>Address: Windacres Barn/Church St,</p>
-            <p>Rudgwick,</p>
-            <p>Horsham,</p>
-            <p>West Sussex,</p>
-            <p>RH12 3EG.</p>
-            <p>For SatVav look for : Hermonger Lane</p>
-        </div>
-        <div class="share-option">
-            <h3>Share this:</h3>
-            <ul>
-                <li class="share-twitter"><a href="https://rudgwicksteamshowcurtisyoung.wordpress.com/events/?share=twitter&nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li>
-                <li class="share-facebook"><a href="https://rudgwicksteamshowcurtisyoung.wordpress.com/charity/?share=facebook&nb=1" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li>
-            </ul>
-            <a href="">Like</a>
-            <p>Be the first to like this.</p>
+            <p>Address: Windacres Barn/Church St,<br>
+                Rudgwick,<br>
+                Horsham,<br>
+                West Sussex,<br>
+                RH12 3EG.<br>
+                For SatVav look for : Hermonger Lane</p>
+            <div class="like-share">
+                <div class="share">
+                    <div class="sharethis">
+                            <span >Share this:</span>
+                    </div>
+                    <div class="share-button">
+                        <img src="/src/Vector.png" alt="tw">
+                        Twitter
+                    </div>
+                    <div class="share-button">
+                        <img src="/src/Vector (1).png" alt="fb">
+                        Facebook
+                    </div>
+                </div>
+                <div class="like">
+                    <div class="likethis">
+                        <span>Like this:</span>
+                    </div>
+                    <div class="like-button">
+                        <img src="/src/Vector10.png" alt="Like">
+                        Like
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <nav class="footer-nav">
-                <ul>
-                    <li><a href="https://www.facebook.com/pages/Rudgwick-Steam-and-Country-Show/116721765093937?hc_ref=SEARCH">Facebook</a></li>
-                    <li><a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a></li>
-                </ul>
+                    <div class="footer-item">
+                        <img src="/src/Group 6.png" alt="fb logo">
+                        <a href="https://www.facebook.com/pages/Rudgwick-Steam-and-Country-Show/116721765093937?hc_ref=SEARCH">Facebook<br>.......................
+                        </a>
+                    </div>
+                    <div class="footer-item">
+                        <img src="/src/Group 5.png" alt="blog logo">
+                        <a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.<br>.......................................................</a>
+                    </div>
             </nav>
         </footer>
     </div>
