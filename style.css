@@ -24,6 +24,7 @@ body {
     /* display: flex;
     flex-wrap: wrap; */
     width: 100%;
+    height: 100%;
     /* flex-basis: 100%; */
     /* background-color: #fff; */
 }
@@ -76,15 +77,32 @@ a {
     left: 15px;
     background-color: ;
     z-index: 2;
+    height: 31px;
 }
 input[type=search] {
     /* position: relative; */
     border: 1px solid #000;
     border-radius: 47px;
     background: #000;
-    width: 230px;
-    text-align: center;
+    width: 200px;
+    /* text-align: center; */
     height: 31px;
+    padding: 10px;
+    padding-right: 40px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input[type=search]:focus{
+    /* background-color: #fff; */
+    transition: all 1.5s;
 }
 .nav > ul {
     display: flex;
@@ -122,7 +140,7 @@ input[type=search] {
 }
 .nav > ul > li:hover{
     background-color: #F23C14;
-    transition: all 0.4s;
+    transition: all 0.45s;
 }
 button[type="submit"] {
     background: none;
@@ -193,6 +211,7 @@ h1 {
     display: inline-block;
     display: flex;
     padding-bottom: 20px;
+    user-select: none;
 }
 .share + .like{
     padding-left: 50px;
@@ -207,6 +226,18 @@ hr {
     padding: 0 0 0 4px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     cursor: pointer;
+    user-select: none;
+}
+.like-button:hover{
+    background-color: #cc854a;
+}
+.like-button:active{
+    background-color: #cd6917;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.activated{
+    background-color: #cd6917;
 }
 .share-button{
     border-radius: 5px;
@@ -216,6 +247,15 @@ hr {
     cursor: pointer;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding-right: 5px;
+    user-select: none;
+}
+.share-button:hover{
+
+}
+.share-button:active{
+    background-color: #cc854a;
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
 }
 .share-button + .share-button {
     margin-left: 15px;
@@ -224,10 +264,12 @@ hr {
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
+    user-select: none;
 }
 .sharethis{
     flex-basis: 100%;
     flex-grow: 1;
+    user-select: none;
 }
 .sharethis > span {
     border-top: 2px solid rgba(0,0,0,0.7);
@@ -248,3 +290,14 @@ hr {
     text-align: center;
     position: relative;
 }
+@media only screen and (max-width: 925px) {
+    .nav > ul {
+        justify-content: flex-start;
+    }
+}
+@media only screen and (max-width: 715px) {
+
+}
+/* 390 844 : 1440 1090
+            : 1038
+*/
