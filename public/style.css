@@ -105,6 +105,10 @@ input[type=search]:focus{
     /* background-color: #fff; */
     transition: all 1.5s;
 }
+.feedback_container{
+    background-color: #e19f69;
+    width: 100%
+}
 .nav > ul {
     display: flex;
     justify-content: space-between;
@@ -115,6 +119,24 @@ input[type=search]:focus{
 }
 .nav{
     width: 75%;
+}
+.slideshowbutton{
+    cursor: pointer;
+    user-select: none;
+}
+.slide{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.content-img_slide{
+    width: 50%;
+    height: 300px;
+    border: 15px solid rgba(255, 255, 255, 0.7);
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 .submit {
     background: none;
@@ -231,6 +253,14 @@ hr {
     cursor: pointer;
     user-select: none;
 }
+/* .slideshowbutton:hover{
+    background-color: #cc854a;
+}
+.slideshowbutton:active{
+    background-color: #cd6917;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+} */
 .like-button:hover{
     background-color: #cc854a;
 }
@@ -303,6 +333,11 @@ hr {
     .nav > ul {
         justify-content: flex-start;
     }
+    .content-img_slide
+    {
+        height: 50%;
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 753px) {
     /* img {
@@ -341,6 +376,15 @@ hr {
         background-color: #D9A880;
         font-size: 10px;
     }
+    .content-img_slide
+    {
+        height: 200px;
+        width: 60%;
+    }
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 /* 390 844 : 1440 1090
             : 1038
